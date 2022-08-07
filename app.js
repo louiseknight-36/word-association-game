@@ -29,8 +29,8 @@ const questions = [
     },
     {
         quiz: ['ham', 'tuna', 'cheese'],
-        options: ['chicken', 'turqoise'],
-        correct: 2
+        options: ['pink', 'chicken'],
+        correct: 1
     }
 ]
 
@@ -101,6 +101,8 @@ function checkAnswer(questionBox, questionButton, option, optionIndex, correctAn
     }
     clicked.push(option)
     questionButton.disabled = clicked.includes(option)
+    // questionButton.addEventListener.onClick.setEnabled(false)
+    
 }
 
 function addResult(questionBox, answer, className) {
